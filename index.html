@@ -1101,12 +1101,6 @@ footer strong{
             <a href="#menu" class="hero-button primary">
                 Menüyü Keşfet
             </a>
-
-            <a
-                href="tel:+905550240880"
-                class="hero-button secondary">
-                0555 024 08 80
-            </a>
         </div>
 
         <div class="hero-badges">
@@ -1231,24 +1225,8 @@ footer strong{
             </h2>
 
             <p>
-                Sipariş, bilgi ve rezervasyon için bize ulaşabilirsiniz.
+                Geleneksel kebap lezzetlerimizi menümüzden keşfedin.
             </p>
-
-            <div class="contact-actions">
-                <a
-                    class="contact-link gold"
-                    href="tel:+905550240880">
-                    📞 Hemen Ara
-                </a>
-
-                <a
-                    class="contact-link"
-                    href="https://wa.me/905550240880?text=Merhaba%2C%20Diyarbak%C4%B1r%20Cihangir%20Kebap%20men%C3%BCs%C3%BC%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum."
-                    target="_blank"
-                    rel="noopener">
-                    💬 WhatsApp
-                </a>
-            </div>
         </div>
     </section>
 </main>
@@ -1257,28 +1235,10 @@ footer strong{
     <strong>Diyarbakır Cihangir Kebap</strong>
 
     📍 Diyarbakır<br>
-    📞 0555 024 08 80<br><br>
+    <br>
 
     © 2026 Tüm hakları saklıdır.
 </footer>
-
-<div class="floating-actions">
-    <a
-        class="float-button whatsapp"
-        href="https://wa.me/905550240880?text=Merhaba%2C%20men%C3%BCn%C3%BCz%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum."
-        target="_blank"
-        rel="noopener"
-        aria-label="WhatsApp">
-        💬
-    </a>
-
-    <a
-        class="float-button phone"
-        href="tel:+905550240880"
-        aria-label="Telefon">
-        📞
-    </a>
-</div>
 
 <div
     class="modal"
@@ -1337,13 +1297,6 @@ footer strong{
                     id="modalPrice">
                 </div>
             </div>
-
-            <button
-                class="modal-action"
-                id="modalCallButton"
-                type="button">
-                Telefonla Bilgi Al
-            </button>
         </div>
     </div>
 </div>
@@ -2090,8 +2043,6 @@ const modalService =
 const modalPrice =
     document.getElementById("modalPrice");
 
-const modalCallButton =
-    document.getElementById("modalCallButton");
 
 function getSectionTitle(category){
     const section =
@@ -2193,14 +2144,6 @@ document.addEventListener(
         ){
             closeModal();
         }
-    }
-);
-
-modalCallButton.addEventListener(
-    "click",
-    function(){
-        window.location.href =
-            "tel:+905550240880";
     }
 );
 
